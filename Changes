@@ -1,0 +1,20 @@
+Revision history for File-Tabular-Web
+
+0.17 06.12.2007
+  - First CPAN release
+
+0.16
+  - Indexed.pm : use bit vectors to merge fulltext with metadata
+
+0.15
+  - removed unused method "prepare_update"
+  - initialization of special fields in "app_initialize"
+
+0.14
+  - nombreux bug fixes dans Attachments/Indexed.pm
+  - include all modules in t/00_load.t
+
+0.13
+  - option EVAL_PERL => 1 for creating templates
+
+

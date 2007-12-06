@@ -1,0 +1,34 @@
+---
+name: File-Tabular-Web
+version: 0.17
+author:
+  - 'Laurent Dami <laurent.dami@justice.ge.ch>'
+abstract: turn a tabular file into a web application
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  AppConfig: 0
+  CGI: 0
+  Carp: 0
+  File::Basename: 0
+  File::Path: 0
+  File::Tabular: 0.71
+  List::MoreUtils: 0
+  List::Util: 0
+  POSIX: 0
+  Search::QueryParser: 0.92
+  Template: 0
+  Test::More: 0
+provides:
+  File::Tabular::Web:
+    file: lib/File/Tabular/Web.pm
+    version: 0.17
+  File::Tabular::Web::Attachments:
+    file: lib/File/Tabular/Web/Attachments.pm
+  File::Tabular::Web::Attachments::Indexed:
+    file: lib/File/Tabular/Web/Attachments/Indexed.pm
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
