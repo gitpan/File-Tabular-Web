@@ -1,6 +1,6 @@
 ---
 name: File-Tabular-Web
-version: 0.17
+version: 0.18
 author:
   - 'Laurent Dami <laurent.dami@justice.ge.ch>'
 abstract: turn a tabular file into a web application
@@ -17,13 +17,16 @@ requires:
   List::MoreUtils: 0
   List::Util: 0
   POSIX: 0
+  Scalar::Util: 0
   Search::QueryParser: 0.92
   Template: 0
   Test::More: 0
+recommends:
+  Search::Indexer: 0.75
 provides:
   File::Tabular::Web:
     file: lib/File/Tabular/Web.pm
-    version: 0.17
+    version: 0.18
   File::Tabular::Web::Attachments:
     file: lib/File/Tabular/Web/Attachments.pm
   File::Tabular::Web::Attachments::Indexed:
