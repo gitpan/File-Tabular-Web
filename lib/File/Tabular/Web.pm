@@ -1,6 +1,6 @@
 package File::Tabular::Web; # documentation at bottom of file
 
-our $VERSION = "0.18"; 
+our $VERSION = "0.19"; 
 
 use strict;
 use warnings;
@@ -512,6 +512,10 @@ sub display { # display results in the requested view
   my $default_tmpl = $view eq 'download' ? "download.tt"
                                          : "$self->{app}{name}_$view.tt";
   my $tmpl_name = $self->{cfg}->get("template_$view") || $default_tmpl;
+
+  # override template toolkit's failsafe counter for while loops
+  # in case of download action
+  local $Template::Directive::WHILE_MAX = 50000 if $view eq 'download';
 
   # call that template
   my $body;
