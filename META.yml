@@ -2,9 +2,11 @@
 abstract: 'turn a tabular file into a web application'
 author:
   - 'Laurent Dami <laurent.dami@justice.ge.ch>'
+build_requires: {}
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
+  Module::Build: 0.40
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4004, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -13,11 +15,13 @@ name: File-Tabular-Web
 provides:
   File::Tabular::Web:
     file: lib/File/Tabular/Web.pm
-    version: 0.19
+    version: 0.20
   File::Tabular::Web::Attachments:
     file: lib/File/Tabular/Web/Attachments.pm
+    version: 0
   File::Tabular::Web::Attachments::Indexed:
     file: lib/File/Tabular/Web/Attachments/Indexed.pm
+    version: 0
 recommends:
   Search::Indexer: 0.75
 requires:
@@ -36,4 +40,4 @@ requires:
   Test::More: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.19
+version: 0.20
